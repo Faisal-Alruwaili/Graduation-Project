@@ -18,7 +18,7 @@ import androidx.core.app.ActivityCompat;
 
 import java.io.ByteArrayOutputStream;
 
-public class Manage_Students extends AppCompatActivity {
+public class EditStudentActivity extends AppCompatActivity {
 private EditText EditTextFileName;
 private EditText StudentName;
 private EditText StudentID;
@@ -30,7 +30,7 @@ private SQLiteDatabase sqLiteDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.manage_students);
+        setContentView(R.layout.activity_edit_student);
 
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE},PackageManager.PERMISSION_GRANTED);
